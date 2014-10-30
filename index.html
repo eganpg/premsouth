@@ -62,6 +62,130 @@
           </ul>
      </div>
 </section>
+
+<!-- This is the modal for the home insurance information fill out -->
+
+
+
+
+<div class="modal fade bs-first-modal-lg" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+ <div class="modal-dialog modal-lg">
+  <div class="modal-content">
+   <div class="contact_form col-sm-8 col-md-8" style="background: white;" >
+    <form action="mailto:peter@tractiondevelopment.com" method="post" enctype="text/plain" style="margin: 5%;">
+     <div class="row">
+      <div class="col-sm-4 col-md-4">
+       <label>Name</label>
+         <input name="name" id="name" class="form-control" type="text" value="">
+      </div>
+      <div class="col-sm-4 col-md-4">
+         <label>E-mail</label>
+         <input name="email" id="email" class="form-control" type="text" value="">
+      </div>
+    </div>
+<div class="row" >
+ <div class="col-sm-8 col-md-8">
+  <p>I want to save money on...</p>
+  <label class="checkbox-inline">
+   <input type="checkbox" id="inlineCheckbox1" value="option1"> Home
+ </label>
+ <label class="checkbox-inline">
+   <input type="checkbox" id="inlineCheckbox2" value="option2"> Rental
+ </label>
+ <label class="checkbox-inline">
+   <input type="checkbox" id="inlineCheckbox3" value="option3"> Auto
+ </label>
+ <label class="checkbox-inline">
+   <input type="checkbox" id="inlineCheckbox3" value="option3"> Flood
+ </label>
+</div>
+</div>
+
+<div class="col-sm-8 col-md-8"><br/>
+  <a id="submit_btn" style="margin-bottom:10%;" class="btn btn-primary" data-toggle="modal"  data-target=".bs-second-modal-lg" name="submit">Next</a> <span id="notice" class="alert alert-warning alert-dismissable hidden" ></span> 
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- End of modal -->
+<!-- Beginning of the second information modal -->
+
+
+
+<div class="modal fade bs-second-modal-lg" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+ <div class="modal-dialog modal-lg">
+  <div class="modal-content">
+   <div class="contact_form col-sm-8 col-md-8" style="background: white;" >
+    <form action="mailto:peter@tractiondevelopment.com" method="post" enctype="text/plain" style="margin: 5%;">
+     <div class="row">
+      <div class="col-sm-4 col-md-4">
+       <label>Phone</label>
+         <input name="name" id="name" class="form-control" type="text" value="">
+      </div>
+      <div class="col-sm-4 col-md-4">
+         <label>DOB</label>
+         <input name="email" id="email" class="form-control" type="text" value="">
+      </div>
+      <div class="col-sm-8 col-md-8">
+         <label>Address</label>
+         <input name="email" id="email" class="form-control" type="text" value="">
+       </div>
+    </div>
+
+
+<div class="col-sm-8 col-md-8"><br/>
+  <a id="submit_btn" style="margin-bottom:10%;" class="btn btn-primary" data-toggle="modal"  data-target=".bs-third-modal-lg" name="submit">Next</a> <span id="notice" class="alert alert-warning alert-dismissable hidden" ></span> </div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- end of second information modal -->
+<!-- Beginning of third information modal -->
+
+<div class="modal fade bs-third-modal-lg" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+ <div class="modal-dialog modal-lg">
+  <div class="modal-content">
+   <div class="contact_form col-sm-8 col-md-8" style="background: white;" >
+    <form action="mailto:peter@tractiondevelopment.com" method="post" enctype="text/plain" style="margin: 5%;">
+     <div class="row">
+      <div class="col-sm-4 col-md-4">
+       <label>Deducible Info</label>
+         <input name="name" id="name" class="form-control" type="text" value="">
+      </div>
+      <div class="col-sm-4 col-md-4">
+         <label>Premium Info</label>
+         <input name="email" id="email" class="form-control" type="text" value="">
+      </div>
+      <div class="col-sm-8 col-md-8">
+         <label>Home Alarm</label>
+         <input name="email" id="email" class="form-control" type="text" value="">
+       </div>
+    </div>
+
+
+<div class="col-sm-8 col-md-8"><br/>
+  <a id="submit_btn" style="margin-bottom:10%;" class="btn btn-primary" name="submit">Submit</a> <span id="notice" class="alert alert-warning alert-dismissable hidden" ></span>
+   <a id="submit_btn" style="margin-bottom:10%;" class="btn btn-primary" name="submit">Continue for Auto</a> <span id="notice" class="alert alert-warning alert-dismissable hidden" ></span>
+   </div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+<!-- End of third modal -->
+
 <div class="main">
      <div class="container">
           <section class="call_to_action">
@@ -70,7 +194,7 @@
                <!-- <a class="btn btn-primary btn-lg" href="#">Buy this theme!</a></section> -->
           <section class="features_teasers_wrapper">
                <div class="row">
-                    <div class="feature_teaser col-sm-3 col-md-3"> <i class="fa fa-home fa-5x" style="color: #2d348c;"></i>
+                    <div class="feature_teaser col-sm-3 col-md-3"> <i data-toggle="modal" data-target=".bs-first-modal-lg" class="fa fa-home fa-5x" style="color: #2d348c;"></i>
                          <h3>Home</h3>
                          <p>For homeowners, insurance protection is an important aspect of <strong>homeownership</strong>. Buying homeowners insurance, or home insurance, means buying protection for your home — both inside and out.</p>
                     </div>
